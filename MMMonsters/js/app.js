@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
 	//headhesive menu
 	let header = new Headhesive('.header-nav-link', {
 		offset: 1200
-
 	});
 	//mixitup
 	let mixer = mixitup('.recent-sort-item');
@@ -183,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
 				document.body.clientWidth > 400
 			) {
 				mixitImgContainer.style.maxHeight = '863px';
-			}else if (
+			} else if (
 				document.body.clientWidth < 400 &&
 				document.body.clientWidth > 319
 			) {
@@ -252,5 +251,25 @@ document.addEventListener('DOMContentLoaded', function() {
 				}
 			);
 		}
+	});
+
+	//placeholder form animation
+
+	const inputsBlure = document.querySelectorAll('.input__blure');
+	const btnSubmit = document.querySelector('.form__submit');
+
+	inputsBlure.forEach((input) => {
+		input.addEventListener('input', () => {
+			if (input.value !== '') {
+				input.nextElementSibling.classList.add('contact__label-active');
+			} else {
+				input.nextElementSibling.classList.remove('contact__label-active');
+			}
+		});
+		btnSubmit.addEventListener('submit', (e) => {
+			e.preventDefault();
+			input.value = '';
+			input.nextElementSibling.classList.remove('contact__label-active');
+		});
 	});
 });
