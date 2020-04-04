@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>D365 - топовий флорист</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" href="images/Logo_ukr.svg" />
+  <link rel="stylesheet" href="css/app.min.css" />
+</head>
+<!-- header -->
+<header class="header">
+  <div class="header__navigation ">
+    <div class="container">
+      <div class="header__navigation-container">
+        <!-- hamburger -->
+        <button class="hamburger--squeeze js-hamburger" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <!-- /hamburger -->
+        <div class="header__logo-location wow slideInLeft">
+
+          <div class="header__logo-cities">
+            <a class="header__logo" href="#">
+              <img src="images/logo-header.svg" alt="D365 logotype" />
+              <span>Дарим радость</span>
+            </a>
+            <select name="cities__select" id="select__cities" class="nselect-1">
+              <option value="0">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Киев</a>
+              </option>
+              <option value="1">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Львов</a>
+              </option>
+              <option value="2">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Тернополь</a>
+              </option>
+              <option value="3">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Ивано-Франковск</a>
+              </option>
+              <option value="4">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Одеса</a>
+              </option>
+              <option value="5">
+                <img src="images/location-header.svg" alt="D365 Іконка локації" />
+                <a href="#">Харьков</a>
+              </option>
+
+            </select>
+          </div>
+
+        </div>
+        <nav class="header__nav wow bounceInUp">
+          <ul class="header__menu">
+            <li>
+              <a href="#">Про нас</a>
+            </li>
+            <li>
+              <a href="#">Оплата</a>
+            </li>
+            <li>
+              <a href="#">Поддержка</a>
+            </li>
+            <li>
+              <a href="#">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__lenguage wow slideInRight">
+          <a class="style__btn">Мой кабинет</a>
+          <a href="index.html" class="header__ua">укр</a>
+          <a href="index_rus.html" class="header__rus header__lenguage-active">рус</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container">
+      <div class="header__main-container">
+        <div class="header__search wow bounceInUp">
+          <input type="search" placeholder="Я шукаю...">
+          <button class="header__search-btn">
+            <img src="images/search-icon.svg" alt="иконка поиска">
+          </button>
+        </div>
+        <div class="header__main-info header__main-info_rus">
+          <div class="header__left-aside wow slideInLeft">
+            <span class="text-title wow bounceInUp" data-wow-delay="0.7s">Что празднуем?</span>
+            <ul class="header__celebrate">
+              <li class="wow bounceInUp" data-wow-delay="0.8s">
+                <img src="images/ring-header.svg" alt="Кільця іконка">
+                <a href="#">Свадьбы</a>
+              </li>
+              <li class="wow bounceInUp" data-wow-delay="0.9s">
+                <img src="images/birthday-header.svg" alt="Торт іконка">
+                <a href="#">Дни рождения</a>
+              </li>
+              <li class="wow bounceInUp" data-wow-delay="1s">
+                <img src="images/bear-header.svg" alt="Медведик іконка">
+                <a href="#">Детские праздники</a>
+              </li>
+              <li class="wow bounceInUp" data-wow-delay="1.2s">
+                <img src="images/group-header.svg" alt="Натовп іконка">
+                <a href="#">Корпоративы</a>
+              </li>
+              <li class="wow bounceInUp" data-wow-delay="1.3s">
+                <img src="images/confetti-header.svg" alt="Конфеті іконка">
+                <a href="#">массовые меропрития</a>
+              </li>
+              <li class="wow bounceInUp" data-wow-delay="1.4s">
+                <img src="images/balloons-header.svg" alt="Кульки іконка">
+                <a href="#">Все что душа захочет</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__slider owl-carousel owl-theme wow slideInRight">
+            <div class="header__slider-item ">
+              <div class="header__slider-item_left header__slider-item_rus">
+                <h1 class="wow bounceInUp" data-wow-delay="0.4s">
+                  Топовий флорист Киева
+                </h1>
+                <p class="wow bounceInUp" data-wow-delay="0.6s">
+                  Украсим вашу Свадьбу “под ключ”.
+                  Оформим церемонию и банкетный зал,
+                  создадим яркие прекрасные цветочные композиции и
+                  букет невесты.
+                </p>
+                <a href="#" class="style__btn wow bounceInUp" data-wow-delay="0.8s">Детальнее</a>
+              </div>
+              <div class="header__slider-item_right">
+                <img src="images/slider.jpg" alt="Квіти">
+              </div>
+            </div>
+            <div class="header__slider-item ">
+              <div class="header__slider-item_left header__slider-item_rus">
+                <h2>
+                  Топовий флорист Киева
+                </h2>
+                <p>
+                  Украсим вашу Свадьбу “под ключ”.
+                  Оформим церемонию и банкетный зал,
+                  создадим яркие прекрасные цветочные композиции и
+                  букет невесты.
+                </p>
+                <a href="#" class="style__btn">Детальнее</a>
+              </div>
+              <div class="header__slider-item_right">
+                <img src="images/slider.jpg" alt="Квіти">
+              </div>
+            </div>
+            <div class="header__slider-item">
+              <div class="header__slider-item_left header__slider-item_rus">
+                <h2>
+                  Топовий флорист Киева
+                </h2>
+                <p>
+                  Украсим вашу Свадьбу “под ключ”.
+                  Оформим церемонию и банкетный зал,
+                  создадим яркие прекрасные цветочные композиции и
+                  букет невесты.
+                </p>
+                <a href="#" class="style__btn">Детальнее</a>
+              </div>
+              <div class="header__slider-item_right">
+                <img src="images/slider.jpg" alt="Квіти">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /header -->
+<!-- celebrate -->
+<section class="celebrate">
+  <div class="container">
+    <div class="celebrate-container">
+      <h3 class="text-title">Что празднуем ?</h3>
+      <div class="celebrate__points">
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.1s">
+          <figure>
+            <img src="images/ring-header.svg" alt="Кільця іконка">
+            <figcaption>
+              Свадьбы
+            </figcaption>
+          </figure>
+        </div>
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.2s">
+          <figure>
+            <img src="images/birthday-header.svg" alt="Торт іконка">
+            <figcaption>
+              Дни рождения
+            </figcaption>
+          </figure>
+        </div>
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.3s">
+          <figure>
+            <img src="images/bear-header.svg" alt="Медведик іконка">
+            <figcaption>
+              Детские праздники
+            </figcaption>
+          </figure>
+        </div>
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.4s">
+          <figure>
+            <img src="images/group-header.svg" alt="Натовп іконка">
+            <figcaption>
+              Корпоративы
+            </figcaption>
+          </figure>
+        </div>
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.5s">
+          <figure>
+            <img src="images/confetti-header.svg" alt="Конфеті іконка">
+            <figcaption>
+              массовые мероприятия
+            </figcaption>
+          </figure>
+        </div>
+        <div class="celebrate__point wow bounceInUp" data-wow-delay="0.6s">
+          <figure>
+            <img src="images/balloons-header.svg" alt="Кульки іконка">
+            <figcaption>
+              Все что душа пожелает
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /celebrate -->
+<!-- top -->
+<section class="top">
+  <div class="container">
+    <div class="top-container">
+      <h4 class="text-title">ТОП-10</h4>
+      <div class="top__items owl-carousel owl-theme">
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.1s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовый свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.2s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовый свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.3s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовый свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.4s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.5s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.6s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.7s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.8s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="0.9s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+        <figure class="top__item wow bounceInUp" data-wow-delay="1s">
+          <img src="images/top-flower.jpg" alt="Тюльпани D365">
+          <figcaption>
+            <span>
+              Топовий свадебный флорист Киева
+            </span>
+            <p>
+              Есть ряд услуг и товаров, без которых свадьба не очень возможна.
+              Цветы со всех уголков мира.
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /top -->
+<!-- news -->
+<section class="news">
+  <div class="container">
+    <div class="new-container">
+      <h5 class="text-title">
+        новости
+      </h5>
+      <div class="news__items owl-carousel owl-theme">
+        <figure class="news__item wow bounceInUp">
+          <img src="images/new1.jpg" alt="D365">
+          <figcaption>
+            <span class="news__item-title">
+              Подготовка к свадьбе - пошагово от А до Я
+            </span>
+            <div class="news__date">
+              <div class="news__icon">
+                <img src="images/calendar.svg" alt="Календар іконка">
+              </div>
+              сегодня, 13:03
+            </div>
+            <p>
+              Не все люди любят планировать, однако, организация свадьбы - это та ситуация, когда без расписанных до
+              мелочей
+              действий не обойтись.
+            </p>
+            <a href="#">
+              Читать далее
+            </a>
+          </figcaption>
+        </figure>
+        <figure class="news__item wow bounceInUp">
+          <img src="images/new2.jpg" alt="D365">
+          <figcaption>
+            <span class="news__item-title">
+              Подготовка к свадьбе - пошагово от А до Я
+            </span>
+            <div class="news__date">
+              <div class="news__icon">
+                <img src="images/calendar.svg" alt="Календар іконка">
+              </div>
+
+              сегодня, 13:03
+            </div>
+            <p>
+              Не все люди любят планировать, однако, организация свадьбы - это та ситуация, когда без расписанных до
+              мелочей
+              действий не обойтись.
+            </p>
+            <a href="#">
+              Читать далее
+            </a>
+          </figcaption>
+        </figure>
+        <figure class="news__item wow bounceInUp">
+          <img src="images/new3.jpg" alt="D365">
+          <figcaption>
+            <span class="news__item-title">
+              Подготовка к свадьбе - пошагово от А до Я
+            </span>
+            <div class="news__date">
+              <div class="news__icon">
+                <img src="images/calendar.svg" alt="Календар іконка">
+              </div>
+              сегодня, 13:03
+            </div>
+            <p>
+              Не все люди любят планировать, однако, организация свадьбы - это та ситуация, когда без расписанных до
+              мелочей
+              действий не обойтись.
+            </p>
+            <a href="#">
+              Читать далее
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /news -->
+<!-- feedback -->
+<section class="feedback">
+  <div class="container">
+    <div class="feedback-container">
+      <h5 class="text-title wow bounceInUp">Отзывы</h5>
+      <div class="feedback__slider owl-carousel owl-theme wow bounceInUp">
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+        <div class="feedback__slider-item">
+          <span class="feedback__title">Андрей Мартынюк</span>
+          <span class="feedback__subtitle">Фотограф</span>
+          <p>
+            Один из найкрутейших ведучих, с кем мне приходилось работать. Настоящий профи своего дело. Если хочеш,
+            что бы
+            твой праздник был на высоте - пишите Андрею и он устроит настоящее шоу.
+          </p>
+          <span class="feedback__footer">- Александр</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /feedback -->
+<!-- about -->
+<div class="about">
+  <div class="container">
+    <div class="about-container">
+      <div class="about__text wow bounceInUp">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.
+        </p>
+        <p>
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+          laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam, eaque ipsa
+          quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        </p>
+      </div>
+      <div class="about__img wow bounceInDown">
+        <img src="images/one-balon.png" alt="Кулька">
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /about -->
+<!-- cities -->
+<section class="cities">
+  <div class="container">
+    <div class="cities-container">
+      <h6 class="text-title">Города</h6>
+      <div class="cities__blocks">
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.7s">
+          <span class="cities__item-title">
+            Киев
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.6s">
+          <span class="cities__item-title">
+            Львов
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.5s">
+          <span class="cities__item-title">
+            Тернополь
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.4s">
+          <span class="cities__item-title">
+            Ивано-Франковск
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.3s">
+          <span class="cities__item-title">
+            Одеса
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+        <div class="cities__item cities__item-title_rus wow bounceInUp" data-wow-delay="0.2s">
+          <span class="cities__item-title ">
+            Харьков
+          </span>
+          <span class="cities__item-subtitle">
+            1234 профессионалов
+          </span>
+        </div>
+      </div>
+      <div class="cities__specialists">
+        <div class="cities__specialists-block wow bounceInDown" data-wow-delay="0.2s">
+          <span class="cities__specialists-number">
+            <span class="cities__name">Луцк</span>
+            - 1000 специалистов
+          </span>
+          <span class="cities__specialists-number">
+            <span class="cities__name">Миргород</span>
+            - 1000 специалистов
+          </span>
+        </div>
+        <div class="cities__specialists-block wow bounceInDown" data-wow-delay="0.3s">
+          <span class="cities__specialists-number">
+            <span class="cities__name">Калуш</span>
+            - 1000 специалистов
+          </span>
+          <span class="cities__specialists-number">
+            <span class="cities__name">Червоноград</span>
+            - 1000 специалистов
+          </span>
+        </div>
+        <div class="cities__specialists-block wow bounceInDown" data-wow-delay="0.4s">
+          <span class="cities__specialists-number">
+            <span class="cities__name">Хмельницкий</span>
+            - 1000 специалистов
+          </span>
+          <span class="cities__specialists-number">
+            <span class="cities__name">Ужгород</span>
+            - 1000 специалистов
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /cities -->
+<!-- social -->
+<section class="social">
+  <div class="container">
+    <div class="social__container">
+      <h6 class="wow bounceInUp">
+        Ищите нас в соцыальних сетях
+      </h6>
+      <div class="social__buttons">
+        <a href="#" class="wow bounceInLeft">
+          <img src="images/facebook.png" alt="D365 facebook">
+          facebook
+        </a>
+        <a href="#" class="wow bounceInRight">
+          <img src="images/instagram.png" alt="D365 instagram">
+          instagram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /social -->
+<!-- footer -->
+<div class="footer">
+  <div class="container">
+    <div class="footer-container">
+      <div class="footer__info">
+        <div class="footer__logo wow slideInUp">
+          <a href="#" class="footer__logo-link">
+            <img src="images/logo-header.svg" alt="D365 logotype" />
+            <span>дарим радость</span>
+          </a>
+        </div>
+        <ul class="footer__nav wow bounceInUp">
+          <li>
+            <a href="#">
+              О нас
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Оплата
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              Поддержка
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              FAQ
+            </a>
+          </li>
+        </ul>
+        <div class="footer__phones wow slideInDown">
+          <div class="footer__phone-block">
+            <div class="footer__phones-ico">
+              <img src="images/phone.svg" alt="D365 Телефон іконка">
+            </div>
+            <a href="tel:+380121232323">
+              +38 012 123 23 23
+            </a>
+          </div>
+          <div class="footer__phone-block">
+            <div class="footer__phones-ico">
+              <img src="images/mobile.svg" alt="D365 Мобільний іконка">
+            </div>
+            <a href="tel:+380121232323">
+              +38 012 123 23 23
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__subline">
+    <div class="container">
+      <div class="footer__subline-container">
+        <span class="footer__copyright wow slideInDown">
+          &copy; D365. 2020. Все права защищены
+        </span>
+        <div class="footer__subline-social wow slideInDown">
+          <a href="#">
+            <img src="images/facebook.png" alt="D365 facebook">
+          </a>
+          <a href="#">
+            <img src="images/instagram.png" alt="D365 instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /footer -->
+<!--mobile menu links-->
+<div class="mobile__menu">
+  <ul class="mobile__links">
+    <li><a href="#">о нас</a></li>
+    <li><a href="#">Оплата</a></li>
+    <li><a href="#">Поддержка</a></li>
+    <li><a href="#">FAQ</a></li>
+  </ul>
+  <button class="mobile__cabinet style__btn">Мой кабинет</button>
+  <div class="mobile__language">
+    <a href="index.html" class="mobile__ua">
+      УКР
+    </a>
+    <a href="index_rus.html" class="mobile__rus header__lenguage-active">
+      РУС
+    </a>
+  </div>
+</div>
+<!--end mobile menu links-->
+<script src="js/app.min.js"></script>
+
+</html>
