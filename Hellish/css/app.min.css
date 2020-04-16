@@ -5762,10 +5762,10 @@ img {
 	background-color: #f29005;
 }
 .hellish__form-subtitle:before {
-	left: 0;
+	left: 8px;
 }
 .hellish__form-subtitle:after {
-	right: 0;
+	right: 8px;
 }
 .hellish__form_email,
 .hellish__form_name,
