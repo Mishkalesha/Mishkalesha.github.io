@@ -23,3 +23,16 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 420px) {
+  .address__phones {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .address__slash {
+    display: none;
+  }
+  .socials__form {
+    max-width: 275px;
+  }
+}

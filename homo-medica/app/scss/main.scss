@@ -117,6 +117,7 @@ li {
     color: $header-text-color;
     font-weight: bold;
     transition: color 0.25s ease;
+    white-space: nowrap;
   }
   a:hover {
     color: $accent;
@@ -126,6 +127,7 @@ li {
     padding-right: 5px;
   }
 }
+
 //end address
 
 //header
