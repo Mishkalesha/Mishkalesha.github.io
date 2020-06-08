@@ -1,0 +1,25 @@
+@media screen and (max-width: 1240px) {
+  .header__navigation,
+  .header__btn {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 900px) {
+  .address__inner {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 480px) {
+  .doctor__block_img {
+    max-width: 100%;
+  }
+  .foot__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
