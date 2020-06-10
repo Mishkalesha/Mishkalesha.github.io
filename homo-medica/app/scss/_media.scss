@@ -18,13 +18,29 @@
     padding-bottom: 10px;
   }
 }
+@media screen and (max-width: 720px) {
+  .foot__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media screen and (max-width: 480px) {
   .doctor__block_img {
     max-width: 100%;
   }
-  .foot__inner {
-    flex-direction: column;
+
+  .socials__inner {
+    justify-content: center;
     align-items: center;
+  }
+  .socials__form {
+    display: none;
+  }
+  .socials__facebook {
+    font-size: 26px;
+  }
+  .copyright {
+    display: none;
   }
 }
 @media screen and (max-width: 420px) {
