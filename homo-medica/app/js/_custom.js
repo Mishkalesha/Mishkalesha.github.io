@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
       dots: true,
       slidesToShow: 1,
       infinite: true,
-      //autoplay: true,
+      autoplay: true,
       autoplaySpeed: 3000,
       arrows: false,
       centerMode: true,
