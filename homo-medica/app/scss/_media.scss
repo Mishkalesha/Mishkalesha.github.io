@@ -24,6 +24,22 @@
     align-items: center;
   }
 }
+@media screen and (max-width: 588px) {
+  .page-address__container {
+    flex-direction: column;
+  }
+  .page-address__map,
+  .page-address__contacts {
+    width: 100%;
+  }
+  .page-address__contacts {
+    ul {
+      li {
+        text-align: center;
+      }
+    }
+  }
+}
 @media screen and (max-width: 480px) {
   .doctor__block_img {
     max-width: 100%;
@@ -74,6 +90,24 @@
       height: 200px;
       width: 300px;
     }
+  }
+  .page-price__consultation_list {
+    margin-bottom: 60px;
+    li {
+      margin-bottom: 40px;
+      flex-direction: column;
+      align-items: center;
+      &:first-child {
+        margin-bottom: 15px;
+      }
+      span {
+        text-align: center;
+      }
+    }
+  }
+  .page-price__consultation__cash,
+  .page-price__consultation__cash_name {
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 420px) {
