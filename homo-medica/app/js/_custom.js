@@ -9,7 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenuLink = document.querySelectorAll(".mobile__menu_link");
   const mobileMenuClose = document.querySelector(".mobile__menu_close");
   const docBody = document.querySelector("body");
+  const loader = document.querySelector(".loader");
 
+  //loader disabled
+  setTimeout(function () {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+  }, 1500);
+
+  //mobile menu show
   function showMobileMenu() {
     mobileMenu.style.visibility = "visible";
     mobileMenu.style.opacity = 1;
@@ -64,8 +72,6 @@ document.addEventListener("DOMContentLoaded", function () {
     autoplay: true,
     autoplaySpeed: 3000,
     arrows: false,
-
-    //variableWidth: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -88,4 +94,25 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     ],
   });
+
+  if (window.innerWidth < 480) {
+    $(".benefits__container").slick({
+      dots: true,
+      slidesToShow: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      centerMode: true,
+    });
+    $(".directions__container").slick({
+      dots: true,
+      slidesToShow: 1,
+      infinite: true,
+      //autoplay: true,
+      autoplaySpeed: 3000,
+      arrows: false,
+      centerMode: true,
+    });
+  }
 });
