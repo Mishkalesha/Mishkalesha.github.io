@@ -51,7 +51,9 @@ gulp.task("scripts", function () {
       "node_modules/jquery/dist/jquery.min.js", // Optional jQuery plug-in (npm i --save-dev jquery)
       //'app/js/_lazy.js', // JS library plug-in example
       "app/js/_custom.js", // Custom scripts. Always at the end
-      "app/js/slick.min.js",
+      "app/js/slick.js",
+      "app/js/jquery.nselect.min.js",
+      "app/js/jquery.mCustomScrollbar.js",
     ])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify()) // Mifify js (opt.)

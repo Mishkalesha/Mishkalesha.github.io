@@ -22,7 +22,7 @@
     "gulp-rsync": "latest",
     "gulp-sass": "latest",
     "gulp-uglify-es": "latest",
-    "jquery": "^3.5.1",
+    "jquery": "latest",
     "normalize.css": "^8.0.1"
   },
   "dependencies": {

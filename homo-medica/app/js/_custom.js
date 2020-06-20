@@ -8,13 +8,57 @@ document.addEventListener("DOMContentLoaded", function () {
   const mobileMenu = document.querySelector(".header__mobile_menu");
   const mobileMenuLink = document.querySelectorAll(".mobile__menu_link");
   const mobileMenuClose = document.querySelector(".mobile__menu_close");
-  const docBody = document.querySelector("body");
-  const loader = document.querySelector(".loader");
+  const poppupOverlay = document.querySelector(".poppup__form_overlay");
+  const poppupForm = document.querySelector(".poppup__form_container");
+  const headerBtn = document.querySelector(".header__btn");
+  const mobileBtn = document.querySelector(".mobile__btn");
+  const formCloseBtn = document.querySelector(".form__btn");
+  const poppupFormSubmit = document.querySelector(".poppup__form");
+  const poppupSucces = document.querySelector(".form__succes");
+
+  headerBtn.addEventListener("click", showPoppup);
+  mobileBtn.addEventListener("click", showPoppup);
+  formCloseBtn.addEventListener("click", hidePoppup);
+
+  poppupFormSubmit.addEventListener("submit", formSucces);
+
+  function formSucces(e) {
+    e.preventDefault();
+    poppupFormSubmit.reset();
+    showSucces();
+    setTimeout(hideSucces, 3000);
+  }
+
+  function showSucces() {
+    poppupSucces.style.opacity = 1;
+    poppupSucces.style.visibility = "visible";
+  }
+
+  function hideSucces() {
+    poppupSucces.style.opacity = 0;
+    poppupSucces.style.visibility = "hidden";
+    hidePoppup();
+  }
+
+  function showPoppup() {
+    poppupOverlay.style.opacity = "1";
+    poppupOverlay.style.visibility = "visible";
+    poppupForm.style.transform = "translateY(0)";
+    document.body.style.overflow = "hidden";
+  }
+
+  function hidePoppup() {
+    poppupOverlay.style.opacity = "0";
+    poppupOverlay.style.visibility = "hidden";
+    poppupForm.style.transform = "translateY(-200%)";
+    document.body.style.overflow = "visible";
+  }
+
+  let loader = document.querySelector(".loader");
 
   //loader disabled
   setTimeout(function () {
-    loader.style.opacity = "0";
-    loader.style.visibility = "hidden";
+    loader.classList.add("hide-loader");
   }, 1500);
 
   //mobile menu show
@@ -66,30 +110,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   $(".doctors__container").slick({
+    slidesToShow: 3,
+    centerPadding: "160px",
     dots: true,
-    slidesToShow: 4,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 3000,
     arrows: false,
+    //autoplay: true,
     responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
         },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -97,22 +137,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (window.innerWidth < 480) {
     $(".benefits__container").slick({
-      dots: true,
+      loop: true,
       slidesToShow: 1,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
       arrows: false,
-      centerMode: true,
+      //autoplay: true,
     });
     $(".directions__container").slick({
-      dots: true,
+      loop: true,
       slidesToShow: 1,
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 3000,
       arrows: false,
-      centerMode: true,
+      //autoplay: true,
     });
   }
+
+  $(".form__nselect").nSelect({
+    hideAfterSelect: true,
+    scrollbarTheme: "dark",
+    topList: true,
+  });
 });

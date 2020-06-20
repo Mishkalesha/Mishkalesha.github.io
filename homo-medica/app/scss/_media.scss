@@ -41,10 +41,6 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .doctor__block_img {
-    max-width: 100%;
-  }
-
   .socials__inner {
     justify-content: center;
     align-items: center;
@@ -63,34 +59,7 @@
       margin: auto;
     }
   }
-  .directions__container {
-    .slick-slide {
-      margin: 0 45px;
-    }
-  }
-  .slick {
-    max-width: 1000px;
-    margin: 0 auto;
-    border: 1px solid black;
-    overflow: hidden;
 
-    &-slide {
-      margin: 0 35px;
-      img {
-        margin: auto;
-      }
-    }
-
-    &-list {
-      margin-left: -30px;
-      margin-right: -30px;
-    }
-
-    &-item {
-      height: 200px;
-      width: 300px;
-    }
-  }
   .page-price__consultation_list {
     margin-bottom: 60px;
     li {
@@ -118,8 +87,5 @@
   }
   .address__slash {
     display: none;
-  }
-  .socials__form {
-    max-width: 275px;
   }
 }
