@@ -1226,6 +1226,7 @@ li {
   z-index: 30;
 }
 .poppup__form_container {
+  padding: 20px 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -1233,7 +1234,7 @@ li {
   max-width: 450px;
 
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #fff;
   border-radius: 30px;
   transform: translateY(-200%);

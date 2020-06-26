@@ -18,15 +18,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   headerBtn.addEventListener("click", showPoppup);
   mobileBtn.addEventListener("click", showPoppup);
-  formCloseBtn.addEventListener("click", hidePoppup);
 
-  poppupFormSubmit.addEventListener("submit", formSucces);
-
-  function formSucces(e) {
-    e.preventDefault();
+  formCloseBtn.addEventListener("click", () => {
+    hidePoppup();
+    console.log("close");
     poppupFormSubmit.reset();
-    showSucces();
-    setTimeout(hideSucces, 3000);
+  });
+
+  if (
+    poppupFormSubmit != null &&
+    poppupFormSubmit != undefined &&
+    poppupFormSubmit != ""
+  ) {
+    poppupFormSubmit.addEventListener("submit", function (e) {
+      e.preventDefault();
+      poppupFormSubmit.reset();
+      showSucces();
+      setTimeout(hideSucces, 3000);
+    });
   }
 
   function showSucces() {
@@ -98,8 +107,11 @@ document.addEventListener("DOMContentLoaded", function () {
       hideMobileMenu();
     });
   });
-
-  homeForm.addEventListener("submit", (e) => e.preventDefault());
+  if (homeForm != null && homeForm != undefined && homeForm != "") {
+    homeForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
 
   document.addEventListener("scroll", () => {
     if (window.pageYOffset > headerHeight) {
@@ -136,16 +148,18 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if (window.innerWidth < 480) {
-    $(".benefits__container").slick({
+    $(".benefits__container_slick").slick({
       loop: true,
       slidesToShow: 1,
       arrows: false,
+      dots: true,
       //autoplay: true,
     });
-    $(".directions__container").slick({
+    $(".directions__container_click").slick({
       loop: true,
       slidesToShow: 1,
       arrows: false,
+      dots: true,
       //autoplay: true,
     });
   }
