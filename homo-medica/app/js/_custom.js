@@ -15,15 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
   const formCloseBtn = document.querySelector(".form__btn");
   const poppupFormSubmit = document.querySelector(".poppup__form");
   const poppupSucces = document.querySelector(".form__succes");
+  const fancyItem = document.querySelector(".gallary");
 
   headerBtn.addEventListener("click", showPoppup);
   mobileBtn.addEventListener("click", showPoppup);
 
-  formCloseBtn.addEventListener("click", () => {
-    hidePoppup();
-    console.log("close");
-    poppupFormSubmit.reset();
-  });
+  if (formCloseBtn != null && formCloseBtn != undefined && formCloseBtn != "") {
+    formCloseBtn.addEventListener("click", () => {
+      hidePoppup();
+      poppupFormSubmit.reset();
+    });
+  }
 
   if (
     poppupFormSubmit != null &&
@@ -126,7 +128,8 @@ document.addEventListener("DOMContentLoaded", function () {
     centerPadding: "160px",
     dots: true,
     arrows: false,
-    //autoplay: true,
+    autoplay: true,
+    autoplaySpeed: 4500,
     responsive: [
       {
         breakpoint: 768,
@@ -153,14 +156,16 @@ document.addEventListener("DOMContentLoaded", function () {
       slidesToShow: 1,
       arrows: false,
       dots: true,
-      //autoplay: true,
+      autoplay: true,
+      autoplaySpeed: 6000,
     });
     $(".directions__container_click").slick({
       loop: true,
       slidesToShow: 1,
       arrows: false,
       dots: true,
-      //autoplay: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
     });
   }
 
@@ -168,5 +173,17 @@ document.addEventListener("DOMContentLoaded", function () {
     hideAfterSelect: true,
     scrollbarTheme: "dark",
     topList: true,
+  });
+
+  //fancy
+  if (fancyItem != null && fancyItem != undefined && fancyItem != "") {
+    $(".gallary").fancybox({
+      arrows: true,
+    });
+  }
+  //saleItem autoplay
+  $(".sale__container").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
 });

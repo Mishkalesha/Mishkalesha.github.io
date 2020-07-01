@@ -39,6 +39,9 @@
       }
     }
   }
+  .page-address__gallery {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 480px) {
   .socials__inner {
