@@ -48,12 +48,13 @@ gulp.task("styles", function () {
 gulp.task("scripts", function () {
   return gulp
     .src([
-      "node_modules/jquery/dist/jquery.min.js", // Optional jQuery plug-in (npm i --save-dev jquery)
+      "node_modules/jquery/dist/jquery.js", // Optional jQuery plug-in (npm i --save-dev jquery)
       //'app/js/_lazy.js', // JS library plug-in example
       "app/js/_custom.js", // Custom scripts. Always at the end
       "app/js/slick.js",
       "app/js/jquery.nselect.min.js",
       "app/js/jquery.mCustomScrollbar.js",
+      "app/js/jquery.fancybox.min.js",
     ])
     .pipe(concat("scripts.min.js"))
     .pipe(uglify()) // Mifify js (opt.)
