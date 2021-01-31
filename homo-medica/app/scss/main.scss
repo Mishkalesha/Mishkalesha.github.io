@@ -61,6 +61,9 @@ li {
   margin: 0;
   list-style: none;
 }
+ol li {
+  list-style: disc;
+}
 // Custom styles
 
 .img-responsive {
@@ -248,10 +251,8 @@ li {
 }
 
 .sale__item {
-  width: 100%;
-  height: auto;
   img {
-    width: 100%;
+    max-width: 100%;
   }
 }
 .header__submenu {
@@ -739,6 +740,7 @@ li {
   box-shadow: 0;
   animation: buttonAnimation 2s infinite;
   overflow: hidden;
+  z-index: 2;
 }
 .btn__call:hover {
   cursor: pointer;
@@ -1344,4 +1346,197 @@ li {
   }
 }
 
+.covid-test__container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.covid-test__main-headline {
+  max-width: 800px;
+  text-align: center;
+}
+.covid-test__moz {
+  text-decoration: underline;
+}
+.covid-headline {
+  margin-top: 60px;
+  font-weight: bold;
+  font-size: 26px;
+  text-align: center;
+}
+.covid-test__info,
+.covid-test__recomendation {
+  p {
+    margin: 10px 0;
+  }
+}
+
+.covid-test__list {
+  padding: 15px;
+}
+
+.covid-test__symptoms-block {
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 500px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
+
+//covid form
+
+.covid-form__left {
+  position: relative;
+  background-image: url("../img/@2x/covid-form2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(black, 0.8);
+  }
+}
+
+.covid-form__container {
+  padding: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.covid-form__left,
+.covid-form__right {
+  width: 50%;
+}
+
+.covid-form__right {
+  display: flex;
+  justify-content: center;
+}
+
+.covid-form__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.covid-form__time {
+  input[type="time"] {
+    margin-top: 5px;
+  }
+}
+
+.covid-form__name,
+.covid-form__data,
+.covid-form__phone,
+.covid-form__time,
+.covid-form__get,
+.covid-form__results {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  input {
+    width: 100%;
+    border: 1px solid $accent;
+    border-radius: 10px;
+    padding: 10px 15px;
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}
+
+.covid-form__small {
+  font-size: 12px;
+}
+.covid-form__after {
+  margin-top: 10px;
+  position: relative;
+  width: 100%;
+}
+
+.covid__form-link {
+  margin-top: 40px;
+  padding: 10px 25px;
+  display: inline-block;
+  color: red;
+  transition: color 0.25s ease;
+  border: 2px solid $accent;
+  border-radius: 25px;
+  text-transform: uppercase;
+  &:hover {
+    cursor: pointer;
+    color: $accent;
+  }
+}
+
+.covid-headline__form {
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.covid-form__submit {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: $accent;
+  color: white;
+  border-radius: 15px;
+  border: none;
+}
+
+.ultrasound,
+.therapy,
+.dermatologist,
+.dermatologist,
+.gynecology {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.ultrasound__headline,
+.therapy__headline,
+.dermatologist__headline,
+.urology__headline,
+.gynecology__headline {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ultrasound__margin {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ultrasound__when_bold {
+  font-weight: bold;
+}
+.ultrasound__background {
+  padding-top: 50px;
+}
+.ultrasound__prostate_bold {
+  font-weight: bold;
+}
+.list-stile__visible {
+  list-style: circle;
+}
 @import "media";

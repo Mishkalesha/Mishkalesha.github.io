@@ -11,11 +11,33 @@
   .address__inner {
     flex-direction: column;
   }
+  .covid-test__symptoms-block {
+    flex-wrap: wrap;
+    justify-content: center;
+    img {
+      margin-top: 50px;
+    }
+  }
 }
 @media screen and (max-width: 768px) {
   .head-padding {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .covid-form__container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .covid-form__right {
+    margin-top: 40px;
+  }
+  .covid-form__left,
+  .covid-form__right {
+    width: 100%;
+  }
+  .covid-headline__form {
+    padding: 20px 0;
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 720px) {

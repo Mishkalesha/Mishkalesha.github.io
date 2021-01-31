@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   //saleItem autoplay
   $(".sale__container").slick({
-    autoplay: true,
+    //autoplay: true,
     autoplaySpeed: 5000,
   });
 });
