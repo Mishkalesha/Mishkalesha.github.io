@@ -15,11 +15,11 @@ document.addEventListener("DOMContentLoaded", function () {
   counts.forEach((item) => {
     let countValue = Number(item.innerText);
     let count = 0;
-    let counter = 0.1;
+    let counter = 50;
 
     let myFunction = function () {
-      if (Number((count / countValue) * 100).toFixed() > 95) {
-        counter = 100;
+      if (Number((count / countValue) * 100).toFixed() > 90) {
+        counter = 300;
       }
       setTimeout(myFunction, counter);
 
