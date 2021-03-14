@@ -31,4 +31,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
     setTimeout(myFunction, counter);
   });
+
+  //burger menu
+  const burgerOverlay = document.querySelector(".overlay");
+  const burgerBtn = document.querySelector(".hamburger");
+  burgerBtn.addEventListener("click", function () {
+    if (!!burgerBtn.classList.contains("is-active")) {
+      this.classList.add("is-active");
+      burgerOverlay.style.right = "0";
+    } else {
+      this.classList.remove("is-active");
+      burgerOverlay.style.right = "-100%";
+    }
+  });
+  //end burger menu
 });
