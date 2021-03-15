@@ -45,4 +45,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   //end burger menu
+
+  //menu items click
+  const navItemBlock = document.querySelector(".mobile-list");
+
+  navItemBlock.addEventListener("click", (e) => {
+    if (e.target.classList.contains("mobile_link")) {
+      burgerBtn.classList.remove("is-active");
+      burgerOverlay.style.right = "-100%";
+    }
+  });
+  //end menu items click
 });
