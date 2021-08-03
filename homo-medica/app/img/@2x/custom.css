@@ -1,0 +1,58 @@
+/* CSS kod pishite v etom faile, chotobi pri ustanovke obnovlenii ne bilo problem  */
+/* --------------------------------------- */
+/* Here you can put custom css rules for your site */
+
+.mega-menu table td.full_dropdown > .wrap {
+    position: relative;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu {
+    left: 0;
+    width: 320px;
+    padding: 10px;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu > li {
+    width: auto;
+    padding: 0 10px;
+    position: relative;
+    margin: 0 -10px 6px;
+    display: block;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu > li:hover {
+    background-color: rgba(0, 0, 0, 0.19);
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu > li:last-child {
+    margin-bottom: 0;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu > li a {
+    font-size: 0.9286em;
+    line-height: 1.3846em;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown>.wrap>.dropdown-menu>li .image {
+    margin: 0;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown  > .wrap > .dropdown-menu > .dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: auto;
+    padding: 10px;
+    background-color: #fff;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+    -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.7);
+    width: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    margin: 0;
+}
+.count_menu_full_count_4 .mega-menu table td.full_dropdown > .wrap > .dropdown-menu > li:hover .dropdown-menu {
+    display: block;
+}
+@media screen and (max-width: 1024px) {
+    .mega-menu table td.dropdown.normal_dropdown .wrap .dropdown-menu {
+        min-width: 170px;
+    }
+}
